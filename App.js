@@ -21,7 +21,12 @@ const AppNavigator = createStackNavigator({
         header: null,
     },
   },
-  Step1: RegisterStep1,
+  Step1: {
+    screen: RegisterStep1, 
+    navigationOptions: {
+        header: null,
+    },
+  },
   Step2: RegisterStep2,
   Step3: RegisterStep3
 },{
