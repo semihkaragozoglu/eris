@@ -5,11 +5,12 @@ import React from 'react';
 
 export class SplashScreen extends Component {
     render() {
+        const { navigate } = this.props.navigation;
         return (
             <ImageBackground source={require('../../assets/images/bg.jpg')} style={styles.container}>
                <Text style={styles.brandName} >Eris</Text>
                <Text style={styles.dailyWelcome} >Sizin için olayları tam olarak buradan inceliyoruz!</Text>
-               <Button bordered dark style={styles.goAppBtn} onPress={() => this.props.navigation.navigate('Step1')}>
+               <Button bordered dark style={styles.goAppBtn} onPress={() => navigate('Step1')}>
                     <Text style={styles.butonText}>Hadi başlayalım</Text>
                </Button>
             </ImageBackground>
