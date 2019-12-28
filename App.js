@@ -23,13 +23,15 @@ const AppNavigator = createStackNavigator({
   },
   Step1: {
     screen: RegisterStep1, 
-    navigationOptions: {
-        header: null,
+    navigationOptions: { 
+      headerTransparent: true, 
+      headerLayoutPreset: 'center',
+      headerTintColor : 'white'
     },
   },
   Step2: RegisterStep2,
   Step3: RegisterStep3
 },{
-  initialRouteName: "Splash"
+  initialRouteName: "Splash",
 });
 const AppContainer = createAppContainer(AppNavigator);
