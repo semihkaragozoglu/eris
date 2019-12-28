@@ -5,7 +5,7 @@ import React from 'react';
 export class RegisterStep1 extends Component {
     render() {
         return (
-            <View style={StyleSheet.container}>
+            <View style={styles.container}>
                 <Text>RegisterStep1 works!</Text>
             </View>
         );
